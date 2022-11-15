@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ovde ce biti nesto</h1>
+    <input type="text" id="newId">
+    <input type="text" id="newName">
+    <button onclick="Dodajelement()">Dodaj u listu</button>
+    <div id="items"></div>
+
+
+    <script>
+        var container = document.getElementById("items");
+        var Items = [{
+            id: 1,
+            name: "A"
+        }, {
+            id: 2,
+            name: "B"
+        }, {
+            id: 3,
+            name: "C"
+        }, {
+            id: 4,
+            name: "D"
+        }]
+        Items.forEach((el) => {
+            KreirajElement(el);
+        });
+
+        function KreirajElement(el) {
+            var newItem = document.createElement("p");
+            newItem.innerText = "Elemenet sa podacima:" + el.id + "" + el.name;
+            container.append(newItem);
+        }
+
+        function Dodajelement() {
+            var a = {
+                id: document.getElementById("newId").value,
+                name: document.getElementById("newName").value
+            };
+            Items.push(a);
+            KreirajElement(a);
+        }
+    </script>
+
+</body>
+
+</html>

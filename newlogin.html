@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newlogin-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <form action="login.html"> -->
+        <div class="form field">
+            Ime <input type="text" id="name" required>
+            <p></p>
+            Prezime <input type="text" id="surname" required>
+            <p></p>
+            Username <input type="text" id="username" id="username" required>
+            <p></p>
+            <span class="hovertext" data-hover="Lozinaka mora imati 1 broj i 6 karaktera">Lozinka <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required></span>
+
+            <p></p>
+            <a href="login.html"><button onclick="register()" id="submit" disabled>  registrij se</button></a>
+        </div>
+        <!-- </form> -->
+
+    </div>
+    <div id="message">
+        <h3>Sifra mora imati ove karakteristike</h3>
+        <p id="capital" class="invalid">Veliko slovo letter</p>
+        <p id="number" class="invalid">Broj</p>
+        <p id="length" class="invalid">Minimum <b>7 karaktera</b></p>
+    </div>
+    <script src="script.js"></script>
+    <script defer src="register.js"></script>
+</body>
+
+</html>

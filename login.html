@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="div-head">
+        <div class="topnav">
+            <!--box-cell box1-->
+            <a href="Home.html" class="link"><img src="imgs/Yu-Gi-Oh Logo.png" alt="" style="width: 80px;"></a>
+            <a href="Profile.html" class="link">Profile</a>
+            <a href="createdeck.html" class="link">Create a deck</a>
+            <a href="yourcards.html" class="link">Your cards</a>
+        </div>
+        <button class="loginbtn"><a href="newlogin.html"><img src="imgs/user-profile.png" alt="" class="img-circle"></a></button>
+    </div>
+
+
+    <table>
+        <tr>
+            <th id="Username">
+                Username
+            </th>
+            <th class="inputs">
+                <input id="username" required type="text">
+            </th>
+        </tr>
+        <tr>
+            <th id="Password">
+                Password
+            </th>
+            <th class="inputs">
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required>
+            </th>
+        </tr>
+
+    </table>
+    <button id="submit" onclick="login()">  Login se</button>
+    <p id="status"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* da dugme bude okruglo */
+
+#submit {
+    border-radius: 65%;
+}
+
+
+/* kada je dugme ukljuceno boja mu je roza */
+
+#submit:enabled {
+    background-color: rgb(255, 0, 255);
+}
+
+#submit:disabled {
+    background-color: lightgrey;
+}
+
+
+/* tekst koji se pojavi kada se predje misem preko polja gde se pise lozinka */
+
+.hovertext {
+    position: relative;
+    /* border: 1px dotted black; */
+    /* color: red; */
+}
+
+
+/* pre nego sto se pojavi tekst */
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+
+/* tekst se pojavi dogadjaj */
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* promena u zeleno kada je korisnik dobro uneo lozinku */
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+
+
+/* a ako nije dobro uneta lozinka bice crveni X */
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}

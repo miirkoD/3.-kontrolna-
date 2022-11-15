@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("imgs/jugi.jpg"); */
+    background-color: #cccccc;
+    line-height: 1;
+}
+
+h1 {
+    color: white
+}
+
+.div-head {
+    background-color: black;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    height: 73px;
+}
+
+.topnav a {
+    height: 50px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a img {
+    height: auto;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* 
+.container {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    /*
+    background: rgb(68, 70, 85);
+    background: linear-gradient(0deg, rgba(68, 70, 85, 1) 0%, rgba(63, 69, 100, 1) 50%, rgba(168, 170, 188, 1) 100%);
+}
+*/
+
+
+/* 
+.box-cell {
+    background-color: rgb(185, 176, 176, 0.5);
+}
+
+.container .box {
+    width: 540px;
+    margin: 50px;
+    display: table;
+}
+
+.container .box .box-row {
+    display: table-row;
+}
+
+.container .box .box-cell {
+    display: table-cell;
+    width: 33%;
+    padding: 10px;
+}
+
+.box-cell {
+    text-align: center;
+    color: white;
+    border: 2px #A9AABC solid;
+}
+
+ */
+
+
+/* 
+.container .box .box-cell.box2 {
+    background-color: #444655;
+    text-align: center;
+    color: white;
+    border: 2px #A9AABC solid;
+}
+
+.container .box .box-cell.box3 {
+    
+    text-align: center;
+    color: white;
+    border: 2px #A9AABC solid;
+}
+
+.container .box .box-cell.box4 {
+    
+    text-align: center;
+    color: white;
+    border: 2px #A9AABC solid;
+}
+
+*/
+
+img {
+    display: block;
+    width: 200px;
+    height: 350px;
+}
+
+.imgs {
+    display: inline-block;
+}
+
+.btn {
+    font-size: 12px;
+    width: 45px;
+    float: right;
+    margin-right: 15px;
+    background-color: rgb(185, 176, 176, 0.5);
+    /* background-color: #6E7BBE; */
+    border: 1px solid #434c79;
+}
+
+.btn:hover {
+    background-color: goldenrod;
+}
+
+#txt {
+    font-size: 25px;
+}
+
+
+/* ---------------------------------- */
+
+.pretraga {
+    background-color: rgb(221, 215, 215, 0.5);
+    width: 40%;
+}
+
+
+/* --------------------------------------------- */
+
+.filter {
+    width: 55px;
+    height: auto;
+}
